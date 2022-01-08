@@ -4,7 +4,7 @@ $(document).ready(function(){
 	var src2 = "https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js";
 	
 	//pewność że kolorowanie kodu zawsze się wyświetli
-	const menuItem = document.querySelectorAll('nav ul li a');
+	/*const menuItem = document.querySelectorAll('nav ul li a');
 	const menuLength = menuItem.length;
 	for(let i=0; i<menuLength; i++){
 		$("article").load("content/"+(i+1)+".html");
@@ -18,7 +18,7 @@ $(document).ready(function(){
 				});
 			});
 		});	
-	}
+	}*/
 	
 	$("article").load("content/1.html");
 			menuSwitch("1");
