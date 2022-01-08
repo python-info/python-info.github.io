@@ -26,5 +26,7 @@ $(document).ready(function(){
 			});
 		});
 		
+		$("article").load("content/"+$(this).attr('href')+".html");
+		
 	});
 });
