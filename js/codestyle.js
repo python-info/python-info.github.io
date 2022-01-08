@@ -13,13 +13,16 @@ $(document).ready(function(){
 
 
 		$("article").load("content/"+$(this).attr('href')+".html");
+		alert("załadowano");
 
 		$.getScript(src1, function () {
 			$('pre > code').each(function(i, block) {
 				hljs.highlightElement(block);	
+				alert("pomalowano");
 				$.getScript(src2, function () {
 					$('code.hljs').each(function(i, block) {
 						hljs.lineNumbersBlock(block);
+						alert("dodano linie");
 					});
 				});
 			});
