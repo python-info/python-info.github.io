@@ -20,6 +20,9 @@ $(document).ready(function(){
 		});	
 	}
 	
+	$("article").load("content/1.html");
+			menuSwitch("1");
+	
 	
 	$("nav ul li a").click(function(e){
 		e.preventDefault();
