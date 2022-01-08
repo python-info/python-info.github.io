@@ -4,7 +4,7 @@ $(document).ready(function(){
 			menuSwitch($(this).attr('href'));
 			$("article").load("content/"+$(this).attr('href')+".html");
 				
-				//funkcje są asynchroniczne więc muszą byc wykonane jedna po drugiej
+				//funkcje są asynchroniczne 
 				$.getScript("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js", function () {
 				$('pre > code').each(function(i, block) {
 					hljs.highlightElement(block);	
