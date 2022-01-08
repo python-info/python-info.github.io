@@ -1,0 +1,109 @@
+<h2>Metody klasy String</h2><br>
+		
+<p>Python posiada zbiór metod, za pomocą, których możecie łatwo modyfikować napisy.
+ Metod używamy na stringu (napisie) według wzoru string.metoda(), z wyjątkiem metod – len, max, min, które string przymują wewnątrz metody.</p><br>
+ <h4>Metody zwracające nowy napis (string):</h4>
+ <table class="tabstr">
+  <tr>
+	<td><b>Metoda</td>	<td><b>Znaczenie</b></td>
+</tr>
+ <tr>
+	<td class="redtext">lower()</td>	<td>Zmienia wszystkie duże litery na małe w stringu</td>
+</tr>
+	  <tr>
+	<td class="redtext">upper()</td>	<td>Zmienia wszystkie małe litery na duże w stringu</td>
+</tr>
+<tr>
+	<td class="redtext">swapcase()</td>	<td>Odwraca rodzaj każdej litery – małe na duże, duże na małe</td>
+</tr>
+<tr>
+	<td class="redtext">capitalize()</td>	<td>Zmienia pierwszą literę w ciągu na dużą</td>
+</tr>
+<tr>
+	<td class="redtext">title()</td>	<td>Zwraca string – tytuł, w którym wszystkie wyrazy zaczynają się dużą literą, a reszta jest małymi lub są to znaki nieliterowe</td>
+</tr>
+<tr>
+	<td class="redtext">join(seq)</td>	<td>Łączenie (konkatenacja) wyrazów w napisie seq w jeden napis, według separatora/stringu na jakim wywołujemy metodę</td>
+</tr>
+<tr>
+	<td class="redtext">lstrip()</td>	<td>Usuwa białe znaki z początku napisu – zwraca kopię pozbawioną białych znaków od lewej strony</td>
+</tr>
+<tr>
+	<td class="redtext">rstrip()</td>	<td>Usuwa białe znaki z końca napisu – zwraca kopię pozbawioną białych znaków od prawej strony</td>
+</tr>
+<tr>
+	<td class="redtext">strip([chars])</td>	<td>Usuwa białe znaki lub znak podanny jako char z początku i końca napisu – wykonuje lstrip() i rstrip() na napisie.</td>
+</tr>
+<tr>
+	<td class="redtext">max(string)</td>	<td>Zwraca literę znajdującą się najdalej w alfabecie od A</td>
+</tr>
+<tr>
+	<td class="redtext">min(string)</td>	<td>Zwraca literę znajdującą się najbliżej w alfabecie od A</td>
+</tr>
+<tr>
+	<td class="redtext">split(str="", num=string.count(str))</td>	<td>Dzieli łańcuch według separatora str (spacja jeśli nie podano) i zwraca podciągi jako listę lub podzieli na co najwyżej liczbę podciągów, jeśli podano num</td>
+</tr>
+<tr>
+	<td class="redtext">splitlines( num=string.count('n'))</td>	<td>Dzieli cały łańcuch (lub wg zadanej liczby num) na osobne linie wg znaku nowej linii’\n’ i zwraca je jako tablicę</td>
+</tr>
+<tr>
+	<td class="redtext">replace(old, new [, max])</td>	<td>Zamienia wszystkie wystąpienia ciagu old na ciąg new lub jeśli jest podane max – podmiana zostanie wykonana o wskazaną liczbę wystąpień</td>
+</tr>
+</table><br><br>
+<h4>Metody zwracające wartość liczbową:</h4>
+ <table class="tabstr">
+  <tr>
+	<td><b>Metoda</td>	<td><b>Znaczenie</b></td>
+</tr>
+ <tr>
+	<td class="redtext">len(string)</td>	<td>Zwraca długość ciągu znaków</td>
+</tr>
+	  <tr>
+	<td class="redtext">count(str, beg=0,end=len(string))</td>	<td>Zlicza ile razy zadany ciąg znaków(str) wystąpił w ciągu znaków lub wewnątrz podciągu, który zaczyna się od indeksu beg i kończy indeksem end</td>
+</tr>
+<tr>
+	<td class="redtext">find(str, beg=0 end=len(string))</td>	<td>Sprawdza gdzie ciąg str występuje w napisie lub podciągu tego napisu jeśli podamy indexbeg i indeks końcowy end. Zwraca indeks początkowy lub -1 jeśli ciąg str nie znajduje się w napisie</td>
+</tr>
+<tr>
+	<td class="redtext">rfind(str, beg=0,end=len(string))</td>	<td>Działa jak find(), ale wyszukiwanie od końca ciągu znaków</td>
+</tr>
+<tr>
+	<td class="redtext">index(str, beg=0, end=len(string))</td>	<td>Działa jak find(), ale zwraca wyjątek jeśli ciąg str nie zostanie znaleziony</td>
+</tr>
+<tr>
+	<td class="redtext">rindex( str, beg=0, end=len(string))</td>	<td>Działa jak index(), ale wyszukiwanie od końca ciągu znaków</td>
+</tr>
+</table><br><br>
+<h4>Metody zwracające <span class="redtext">true</span>/<span class="redtext">false</span>:</h4>
+ <table class="tabstr">
+  <tr>
+	<td><b>Metoda</td>	<td><b>Znaczenie</b></td>
+</tr>
+ <tr>
+	<td class="redtext">isalnum()</td>	<td>Zwraca true jeśli wszystkie znaki w ciągu są alfanumeryczne (litery lub cyfry)</td>
+</tr>
+	  <tr>
+	<td class="redtext">isalpha()</td>	<td>Zwraca true jeśli wszystkie znaki w ciągu są literami</td>
+</tr>
+<tr>
+	<td class="redtext">isdigit()</td>	<td>Zwraca true jeśli wszystkie znaki w ciągu są cyframi</td>
+</tr>
+<tr>
+	<td class="redtext">islower()</td>	<td>Zwraca true jeśli wszystkie znaki w ciągu są małymi literami.</td>
+</tr>
+<tr>
+	<td class="redtext">isspace()</td>	<td>Zwraca true jeśli wszystkie znaki w ciągu są białymi znakami (spacja, tabulacja, przejście do nowej linii itp)</td>
+</tr>
+<tr>
+	<td class="redtext">istitle()</td>	<td>Zwraca true jeśli ciąg spełnia warunek tytułu (każdy wyraz napisu musi zaczynać się dużą literą i składać wyłącznie z małych liter lub znaków nieliterowych)</td>
+</tr>
+<tr>
+	<td class="redtext">isupper()</td>	<td>Zwraca true jeśli ciąg ma co najmniej jedną dużą literę.</td>
+</tr>
+<tr>
+	<td class="redtext">startswith(str, beg=0,end=len(string))</td>	<td>Zwraca wynik sprawdzenia, czy napis jest rozpoczęty ciągiem str. Przy podaniu indeksu beg, sprawdzenie rozpoczyna się od tego znaku. Przy wystąpieniu argumentu end sprawdzenie zakończy się na tym znaku</td>
+</tr>
+<tr>
+	<td class="redtext">endswith(str, beg=0, end=len(string))</td>	<td>Zwraca wynik sprawdzenia, czy napis jest zakończony ciągiem str. Przy podaniu indeksu beg, sprawdzenie rozpoczyna się od tego znaku. Przy wystąpieniu argumentu end sprawdzenie zakończy się na tym znaku</td>
+</tr>
+</table>

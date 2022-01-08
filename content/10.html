@@ -1,0 +1,680 @@
+  <h4>Niektóre funkcje wbudowane:</h4><br>
+  	<p><b>abs ()</b> - zwraca wartość bezwzględną podanej liczby. Jeśli liczba jest liczbą zespoloną, abs () zwraca jej wielkość.<br><br>
+  	<b>bin ()</b> - konwertuje i zwraca binarny odpowiednik ciągu danej liczby całkowitej. Jeśli parametr nie jest liczbą całkowitą, musi zaimplementować metodę __index __ (), aby zwrócić liczbę całkowitą.<br>
+  	Metoda bin () zwraca łańcuch binarny równoważny podanej liczbie całkowitej.
+  	Jeśli nie podano liczby całkowitej, wywołuje TypeErrorwyjątek podkreślający, że typ nie może być interpretowany jako liczba całkowita.<br><br>
+  	<b>bool ()</b> - konwertuje wartość na Boolean (True lub False) przy użyciu standardowej procedury testowania prawdy.<br><br>
+  	<b>callable ()</b> - zwraca True, jeśli przekazany obiekt jest wywoływalny. Jeśli nie, zwraca False.<br><br>
+  	<b>chr ()</b> - zwraca znak (ciąg znaków) z liczby całkowitej (reprezentuje kod Unicode znaku).<br>
+  	Metoda chr () przyjmuje pojedynczy parametr, liczbę całkowitą i .<br>
+  	Prawidłowy zakres liczby całkowitej wynosi od 0 do 1,114,111.<br><br>
+      <b>dict ()</b> - tworzy słownik w Pythonie.<br><br>
+  	<b>dir ()</b> - zwraca listę atrybutów i metod pewnego obiektu <br><br>
+  	<b>enumerate ()</b> - pozwala na czytelniejsze zapisanie pewnych rodzajów pętli. Wyrażenie enumerate(ob), gdzie ob jest iteratorem lub sekwencją, zwraca iterator, którego kolejnymi wartościami są: (0, ob[0]), (1, ob[1]), (2, ob[2]), itd.<br><br>
+  	<b>eval ()</b> - uruchamia kod Pythona (przekazywany jako argument) w programie.<br><br>
+  	<b>float ()</b> - zwraca liczbę zmiennoprzecinkową z liczby lub ciągu znaków.<br><br>
+  	<b>exec ()</b> - wykonuje dynamicznie utworzony program, który jest łańcuchem lub obiektem kodu.<br><br>
+  	<b>help () </b> - wywołuje wbudowany system pomocy Pythona.<br><br>
+  	<b>hex () </b> - konwertuje liczbę całkowitą na odpowiedni ciąg szesnastkowy.<br><br>
+  	<b>input () </b> - umożliwia wprowadzenie danych przez użytkownika.<br><br>
+  	<b>int () </b> - zwraca obiekt całkowity z dowolnej liczby lub ciągu.<br><br>
+  	<b>iter ()  </b> - zwraca iterator dla danego obiektu. Metoda iter () tworzy obiekt, który można iterować po jednym elemencie naraz.
+  	Obiekty te są przydatne, gdy są połączone z pętlami, jak pętla for , pętla while .<br><br>
+  	<b>list () </b> - tworzy listę w Pythonie.<br><br>
+  	<b>len () </b> - zwraca liczbę elementów (długość) w obiekcie.<br><br>
+  	<b>max () </b> - zwraca największy element.<br><br>
+  	<b>min() </b> - zwraca najmniejszy element.<br><br>
+  	<b>map () </b> - stosuje daną funkcję do każdego elementu iterowalnego (listy, krotki itp.) I zwraca listę wyników.<br><br>
+  	<b>next () </b> - zwraca następny element z iteratora.<br><br>
+  	<b>object () </b> - zwraca bezobsługowy obiekt, który jest bazą dla wszystkich klas.<br><br>
+  	<b>oct () </b> - pobiera liczbę całkowitą i zwraca jej reprezentację ósemkową.<br><br>
+  	<b>ord () </b> - zwraca liczbę całkowitą reprezentującą punkt kodowy Unicode dla danego znaku Unicode. Metoda ord () jest odwrotnością chr () .<br><br>
+  	<b>pow () </b> - zwraca x do potęgi y. Jeśli podano trzeci argument (z), to zwraca on x do potęgi y modułu z, tj. Pow (x, y)% z.<br><br>
+  	<b>print () </b> - drukuje dany obiekt na standardowym urządzeniu wyjściowym (ekranie) lub na pliku strumienia tekstu.<br><br>
+  	<b>reverse () </b> - zwraca odwrócony iterator danej sekwencji.<br><br>
+  	<b>round() </b> -  zmiennoprzecinkową zaokrągloną do podanych cyfr po przecinku.<br><br>
+  	<b>slice () </b> - jest używany do wycinania danej sekwencji ( ciąg , bajty , krotka , lista lub zakres) <br><br>
+  	<b>sorted () </b> - zwraca posortowaną listę z danej iterowalnej.<br><br>
+  	<b>str () </b> - przekształca dane w łańcuch znaków. <br><br>
+  	<b>sum() </b> - dodaje elementy.<br><br>
+  	<b>tuple () </b> - służy do tworzenia krotki w Pythonie.<br><br>
+  	<b>type() </b> - zwraca typ danych podanego obiektu. <br><br></p>
+  	
+  	
+  	<h2>Metody operujące na napisach</h2><br>
+  	<p>Wyjątkowo dużo metod posiada klasa string. Metody te służą do różnego typu konwersji i formatowania napisów.<br>
+  	Na początek stwórzmy zmienną napisową s:</p>
+  <pre>
+  <code class="py">
+  >>> s="to jest NAPIS"
+  
+  >>> s
+  
+  'to jest NAPIS'
+   </code>
+  </pre>
+  	<p><b>capitalize( ) </b> - służy do nadania napisowi formatu jak w zdaniu, to jest zmiany pierwszej litery na dużą, a pozostałych na małe </p>
+  <pre>
+  <code class="py">
+  >>> s.capitalize()
+  
+  'To jest napis'
+   </code>
+  </pre>
+  	<p><b>center( )  </b> - służy do wyśrodkowania napisu w polu o podanej długości. Domyślnie pole dopełniane jest znakiem spacji </p>
+  <pre>
+  <code class="py">
+  >>> s.center(32)
+  '         to jest NAPIS          '
+  >>> s.center(64)
+  '                         to jest NAPIS   
+   </code>
+  </pre>
+   <p>Możemy jednak podać inny znak wypełnienia (jako drugi parametr metody):</p>
+  <pre>
+  <code class="py">
+  >>> s.center(64,'*')
+  '*************************to jest NAPIS**************************' 
+   </code>
+  </pre>
+  	<p><b>count( ) </b> - oblicza ile razy określony ciąg znaków występuje w napisie</p>
+  <pre>
+  <code class="py">
+  >>> s.count('t')
+  
+  2
+  
+  >>> (s*10).count(s)
+  
+  10
+   </code>
+  </pre>
+  	<p><b>find( ) </b> - odnajduje pierwsze wystąpienie określonego ciąg znaków w napisie </p>
+  <pre>
+  <code class="py">
+  >>> s.find('NAPIS')
+  
+  8
+   </code>
+  </pre>
+   <p>Jeżeli szukanego ciągu w napisie nie ma, zwracana jest wartość -1:</p>
+  <pre>
+   <code class="py">
+  >>> s.find('napis')
+  
+  -1
+   </code>
+  </pre>
+  	<p><b>isdigit( ) </b> - sprawdza, czy napis zawiera tylko cyfry </p>
+  <pre>
+  <code class="py">
+  >>> s.isdigit( )
+  
+  False
+  
+  >>> '18'.isdigit()
+  
+  True
+  
+  >>> '18.2'.isdigit()
+  
+  False
+   </code>
+  </pre>
+  	<p><b>join( ) </b> - łączy wszystkie elementy sekwencji podanej jako parametr w pojedynczy napis, wstawiając pomiędzy nie napis dla którego wywołujemy metodę </p>
+  <pre>
+  <code class="py">
+  >>> ' '.join(['ala','ma','kota'])
+  
+  'ala ma kota'
+  
+  >>> ','.join(['ala','ma','kota'])
+  
+  'ala,ma,kota'
+  
+  >>> s.join(['***']*5)
+  
+  '***to jest NAPIS***to jest NAPIS***to jest NAPIS***to jest NAPIS***'
+   </code>
+  </pre>
+  	<p><b> lower( )  </b> - zamienia wszystkie duże litery w napisie na małe </p>
+  <pre>
+  <code class="py">
+  >>> s.lower()
+  
+  'to jest napis'
+   </code>
+  </pre>
+  	<p><b>replace( ) </b> - zamienia wszystkie wystąpienia określonego ciąg znaków w napisie na inny ciąg </p>
+  <pre>
+  <code class="py">
+  >>> s.replace('NAPIS','tekst')
+  
+  'to jest tekst'
+  
+  >>> s.replace(' ','---')
+  
+  'to---jest---NAPIS'
+   </code>
+  </pre>
+  	<p><b>rfind( ) </b> -  odnajduje ostatnie wystąpienie określonego ciąg znaków w napisie </p>
+  <pre>
+  <code class="py">
+  >>> s.rfind('NAPIS')
+  
+  8
+  
+  >>> 'ala ma kota'.rfind('a')
+  
+  10
+   </code>
+  </pre>
+   <p>Jeżeli szukanego ciągu w napisie nie ma, zwracana jest wartość -1</p>
+  <pre>
+  <code class="py">
+  >>> s.rfind('napis')
+  
+  -1
+   </code>
+  </pre>
+  	<p><b>rjust( ) </b> - służy do wyrównania napisu do prawej w polu o podanej długości. Domyślnie pole dopełniane jest znakiem spacji </p>
+  <pre>
+  <code class="py">
+  >>> s.rjust(32)
+  
+  '                   to jest NAPIS'
+  
+  >>> s.rjust(64)
+  
+  '                                                   to jest NAPIS'
+  
+  
+   </code>
+  </pre>
+   <p>Możemy jednak podać inny znak wypełnienia (jako drugi parametr metody):</p>
+  <pre>
+  <code class="py">
+  >>> s.rjust(64,'.')
+  
+  '...................................................to jest NAPIS'
+   </code>
+  </pre>
+  	<p><b>split() </b> - tworzy listę wyrazów występujących w napisie </p>
+  <pre>
+  <code class="py">
+  >>> s.split()
+  
+  ['to', 'jest', 'NAPIS']
+  
+  >>> for wyraz in s.split():
+  
+        print wyraz.capitalize().rjust(60)
+  
+   
+  
+       
+  
+                                                            To
+  
+                                                          Jest
+  
+                                                         Napis
+   </code>
+  </pre>
+   <p>Jako parametr możemy podać znak rozdzielający wyrazy (domyślnie spacja):</p>
+  <pre>
+  <code class="py">
+  >>> '032-345-231'.split('-')
+  
+  ['032', '345', '231']
+   </code>
+  </pre>
+  	<p><b> splitlines() </b> - tworzy listę linii występujących w napisie</p>
+  <pre>
+  <code class="py">
+  >>> ((s+'\n')*10).splitlines()
+  
+  ['to jest NAPIS', 'to jest NAPIS', 'to jest NAPIS', 'to jest NAPIS', 'to jest NAPIS', 'to jest NAPIS', 'to jest NAPIS', 'to jest NAPIS', 'to jest NAPIS', 'to jest NAPIS']
+   </code>
+  </pre>
+  	<p><b>swapcase( ) </b> -  odwraca wielkość liter w napisie</p>
+  <pre>
+  <code class="py">
+  >>> s.swapcase()
+  
+  'TO JEST napis'
+   </code>
+  </pre>
+  	<p><b> title( )  </b> - zmienia wielkość liter jak w nagłówku</p>
+  <pre>
+  <code class="py">
+  >>> s.title( )
+  
+  'To Jest Napis'
+   </code>
+  </pre>
+  	<p><b>upper( ) </b> - zamienia wszystkie małe litery w napisie na duże</p>
+  <pre>
+  <code class="py">
+  >>> s.upper()
+  
+  'TO JEST NAPIS'
+   </code>
+  </pre>
+  <br><br>
+   <h4>Metody operujące na listach</h4>
+   <p>Również klasa list posiada dużo metod. Metody te służą do różnego typu modyfikacji i porządkowania list.<br>
+  Na początek stwórzmy listę l:</p>
+  <pre>
+  <code class="py">
+  
+  >>> l=range(1,21)
+  
+  >>> l
+  
+  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+   </code>
+  </pre>
+  	<p><b>append( ) </b> - dołącza do listy pojedynczy element </p>
+  <pre>
+  <code class="py">
+  >>> l.append(33)
+  
+  >>> l
+  
+  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 33]
+   </code>
+  </pre>
+  	<p><b>extend( ) </b> -  dołącza do listy inną listę </p>
+  <pre>
+  <code class="py">
+  >>> l.extend([33,99])
+  
+  >>> l
+  
+  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 33, 33, 99]
+  
+  >>>
+   </code>
+  </pre>
+  	<p><b>count(w) </b> - liczy ile razy występuje na liście wartość w </p>
+  <pre>
+  <code class="py">
+  >>> l.count(33)
+  
+  2
+  
+  >>> l.count(99)
+  
+  1
+  
+  >>> l.count(102)
+  
+  0
+   </code>
+  </pre>
+  	<p><b> index(w) </b> - znajduje pierwszą pozycję listy na której występuje wartość w </p>
+  <pre>
+  <code class="py">
+  >>> l.index(33)
+  
+  20
+   </code>
+  </pre>
+  	<p><b>insert(i, w) </b> - wstawia na pozycję i listy wartość w </p>
+  <pre>
+  <code class="py">
+  >>> l.insert(5,77)
+  
+  >>> l
+  
+  [1, 2, 3, 4, 5, 77, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 33, 33, 99]
+   </code>
+  </pre>
+  	<p><b>pop(i) </b> - zwraca wartość z pozycji i listy, po czym usuwa tę pozycję </p>
+  <pre>
+  <code class="py">
+  >>> l.pop(5)
+  
+  77
+  
+  >>> l
+  
+  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 33, 33, 99]
+  
+  >>>
+   </code>
+  </pre>
+  	<p><b>remove(w)</b> - usuwa z listy pierwszą znalezioną na liście wartość w </p>
+  <pre>
+  <code class="py">
+  >>> l.remove(99)
+  
+  >>> l
+  
+  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 33, 33]
+  
+  >>> l.count(33)
+  
+  2
+  
+  >>> l.remove(33)
+  
+  >>> l
+  
+  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 33]
+  
+  >>> l.count(33)
+  
+  1
+  
+  >>> l.remove(33)
+  
+  >>> l
+  
+  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+  
+  >>> l.count(33)
+  
+  0
+   </code>
+  </pre>
+  	<p><b>reverse( )  </b> - odwraca kolejność elementów listy </p>
+  <pre>
+  <code class="py">
+  >>> l.reverse()
+  
+  >>> l
+  
+  [20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+   </code>
+  </pre>
+  	<p><b>sort( ) </b> - porządkuje elementy listy w kolejności rosnącej </p>
+  <pre>
+  <code class="py">
+  >>> l.sort()
+  
+  >>> l
+  
+  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+   </code>
+  </pre>
+  <br><br>
+    <h4>Funkcje matematyczne</h4>
+    <p>Moduł math zawiera definicje najczęściej używanych funkcji matematycznych.</p>
+  <pre>
+  <code class="py">
+  >>> from math import *
+   </code>
+  </pre>
+   <p>Funkcje modułu math operują na liczbach rzeczywistych.</p>
+   
+  	<p><b>math.ceil(x) </b> - zwraca sufit liczby rzeczywistej x (najmniejszą liczbę całkowitą nie mniejszą niż x) </p>
+  <pre>
+  <code class="py">
+  >>> ceil(2.7)
+  
+  3.0
+   </code>
+  </pre>
+  	<p><b>math.fabs(x)  </b> - zwraca wartość absolutną liczby rzeczywistej x </p>
+  <pre>
+  <code class="py">
+  >>> fabs(-3)
+  
+  3.0
+   </code>
+  </pre>
+  	<p><b>math.floor(x) </b> - zwraca podłogę liczby rzeczywistej x (największą liczbę całkowitą nie większą niż x) </p>
+  <pre>
+  <code class="py">
+  >>> floor(2.7)
+  
+  2.0
+   </code>
+  </pre>
+  	<p><b>math.modf(x) </b> - zwraca krotkę zawierającą część ułamkową i całkowitą liczby rzeczywistej x </p>
+  <pre>
+  <code class="py">
+  >>> modf(2.5)
+  
+  (0.5, 2.0)
+  
+  >>> modf(2.5)[0]
+  
+  0.5
+   </code>
+  </pre>
+  	<p><b>math.exp(x)  </b> -  zwraca e do potęgi x </p>
+  <pre>
+  <code class="py">
+  >>> exp(1)
+  
+  2.7182818284590451
+   </code>
+  </pre>
+  	<p><b>math.log(x) </b> - zwraca logarytm naturalny z x </p>
+  <pre>
+  <code class="py">
+  >>> log(e)
+  
+  1.0
+   </code>
+  </pre>
+  	<p><b>math.sqrt(x) </b> - zwraca pierwiastek kwadratowy z x </p>
+  <pre>
+  <code class="py">
+  >>> sqrt(49)
+  
+  7.0
+   </code>
+  </pre>
+  	<p><b>math.acos(x) </b> - zwraca w radianach arcus cosinus kąta x </p>
+  <pre>
+  <code class="py">
+  >>> acos(1)
+  
+  0.0
+   </code>
+  </pre>
+  	<p><b>math.asin(x)</b> - zwraca w radianach arcus sinus kąta x </p>
+  <pre>
+  <code class="py">
+  >>> asin(0)
+  
+  0.0
+   </code>
+  </pre>
+  	<p><b>math.atan(x) </b> - zwraca w radianach arcus tangens kąta x </p>
+  <pre>
+  <code class="py">
+  >>> atan(0)
+  
+  0.0
+   </code>
+  </pre>
+  	<p><b>math.cos(x) </b> - zwraca typ danych podanego obiektu. </p>
+  <pre>
+  <code class="py">
+  >>> cos(1)
+  
+  0.0
+   </code>
+  </pre>
+  	<p><b>math.sin(x) </b> - zwraca sinus kąta x podanego w radianach</p>
+  <pre>
+  <code class="py">
+  >>> sin(0)
+  
+  0.0
+   </code>
+  </pre>
+  	<p><b>math.tan(x) </b> - zwraca tangens kąta x podanego w radianach </p>
+  <pre>
+  <code class="py">
+  >>> tan(0)
+  
+  0.0
+   </code>
+  </pre>
+  	<p><b>math.hypot(x, y) </b> - zwraca odległość punktu o współrzędnych (x, y) od początku układu (0, 0)
+  
+  (długość przeciwprostokątnej dla przyprostokątnych o długościach x i y) </p>
+  <pre>
+  <code class="py">
+  >>> hypot(3,4)
+  
+  5.0
+   </code>
+  </pre>
+  	<p><b>math.degrees(x) </b> - zamienia miarę kąta x wyrażoną w radianach na stopnie </p>
+  <pre>
+  <code class="py">
+  >>> degrees(pi)
+  
+  180.0
+   </code>
+  </pre>
+  	<p><b>math.radians(x) </b> - zwraca typ danych podanego obiektu. </p>
+  <pre>
+  <code class="py">
+  >>> radians(180)
+  
+  3.1415926535897931
+   </code>
+  </pre><br><br>
+   <h4>Moduły</h4>
+   <p>Moduły Pythona zawierają definicje rzadziej używanych funkcji i typów danych.<br>
+  Dostęp do nich uzyskujemy dzięki instrukcji import. Wpiszmy:</p>
+  <pre>
+  <code class="py">
+  >>> import random
+   </code>
+  </pre>
+   <p>Od tej pory mamy dostęp do zawartości modułu random. Moduł ten zawiera funkcje obsługujące generowanie liczb pseudolosowych</p>
+  <pre>
+  <code class="py">
+  >>> random.seed()
+   </code>
+  </pre>
+   <p>Inicjalizuje generator liczb pseudolosowych. Użycie tej funkcji powinno zawsze poprzedzać losowanie jakiejkolwiek liczby.</p>
+  <pre>
+  <code class="py">
+  >>> random.randint(1,10)
+  
+  3
+  
+  >>> random.randint(1,10)
+  
+  1
+  
+  >>> random.randint(1,10)
+  
+  4
+   </code>
+  </pre>
+   <p>Funkcja randint(od, do) losuje liczbę całkowitą z zakresu od..do.<br>
+   Zauważmy, że nazwę funkcji poprzedzamy nazwą modułu i kropką.<br>
+   Możemy jednak uczynić nazwy funkcji dostępnymi bez potrzeby używania nazwy modułu poprzez użycie instrukcji from:</p>
+  <pre>
+  <code class="py">
+  >>> from random import randint
+   </code>
+  </pre>
+  <p>Od tej pory możemy po prostu napisać:</p>
+  <pre>
+  <code class="py">
+  >>> randint(1,10)
+  
+  6
+   </code>
+  </pre>
+   <p>Ale jeżeli napiszemy</p>
+  <pre>
+  <code class="py">
+  >>> choice(s.split())
+  
+   
+  
+  Traceback (most recent call last):
+  
+    File "<pyshell#14>", line 1, in -toplevel-
+  
+      choice(s.split())
+  
+  NameError: name 'choice' is not defined
+   </code>
+  </pre>
+   <p>Zamiast udostępniać po kolei nazwy poszczególnych funkcji, można zażądać wszystkich nazw (ale uwaga! nie dla każdego modułu działa to prawidłowo):</p>
+  <pre>
+  <code class="py">
+  >>> from random import *
+   </code>
+  </pre>
+   <p>I dalej:</p>
+  <pre>
+  <code class="py">
+  >>> choice(s.split())
+  
+  'to'
+   </code>
+  </pre>
+  	<p><b>choice() </b> - wybiera losowy element z sekwencji. </p>
+  <pre>
+  <code class="py">
+  >>> choice(s.split())
+  
+  'jest'
+  
+  >>> choice(s)
+  
+  'o'
+  
+  >>> choice(l)
+  
+  1
+   </code>
+  </pre>
+  	<p><b>shuffle() </b> - wykonuje losową permutację sekwencji </p>
+  <pre>
+  <code class="py">
+  >>> shuffle(l)
+  
+  >>> l
+  
+  [11, 20, 1, 9, 10, 2, 14, 18, 5, 6, 15, 3, 7, 16, 17, 12, 8, 4, 19, 13]
+  
+  >>> shuffle(l)
+  
+  >>> l
+  
+  [15, 1, 13, 14, 9, 8, 4, 10, 18, 16, 12, 3, 11, 17, 19, 7, 5, 6, 20, 2]
+  
+  >>>
+   </code>
+  </pre>
+  	<p><b>random() </b> - zwraca losową liczbę rzeczywistą z przedziału [0.0, 1.0) </p>
+  <pre>
+  <code class="py">
+  >>> random()
+  
+  0.1964729982262956
+   </code>
+  </pre>
+  	<p><b>uniform(a,b) </b> - zwraca losową liczbę rzeczywistą z przedziału [a, b) </p>
+  <pre>
+  <code class="py">
+  >>> uniform(10,20)
+  
+  13.952472157445552
+   </code>
+  </pre>
+  	<p>Oprócz jednostajnego, dostępne są i inne rozkłady zmiennych losowych. Np. funkcja normalvariate(mu, sigma) 
+  	zwraca wartość zmiennej losowej o rozkładzie normalnym, o średniej mu i odchyleniu standardowym sigma</p>
+  <pre>
+  <code class="py">
+  >>> normalvariate(10,5)
+  
+  4.6557086378024239
+   </code>
+  </pre>
