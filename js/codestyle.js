@@ -12,7 +12,7 @@ $(document).ready(function(){
 		menuSwitch($(this).attr('href'));
 
 
-		$("article").load("content/"+$(this).attr('href')+".html");
+		/*$("article").load("content/"+$(this).attr('href')+".html");*/
 
 		$.getScript(src1, function () {
 			$('pre > code').each(function(i, block) {
