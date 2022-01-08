@@ -16,13 +16,15 @@ $(document).ready(function(){
 		alert("załadowano");
 
 		$.getScript(src1, function () {
+			alert("pomalowano");
 			$('pre > code').each(function(i, block) {
 				hljs.highlightElement(block);	
-				alert("pomalowano");
+				
 				$.getScript(src2, function () {
+					alert("dodano linie");
 					$('code.hljs').each(function(i, block) {
 						hljs.lineNumbersBlock(block);
-						alert("dodano linie");
+						
 					});
 				});
 			});
