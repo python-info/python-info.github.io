@@ -1,7 +1,5 @@
 $(document).ready(function(){
 	
-	var src1 = "js/highlight.min.js"/*"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"*/;
-	var src2 = "js/highlightjs-line-numbers.min.js"/*"https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"*/;		
 	
 	$("article").load("content/1.html");
 			menuSwitch("1");
@@ -36,7 +34,9 @@ $(document).ready(function(){
 	});
 });
 
-
+var src1 = "js/highlight.min.js"/*"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"*/;
+	var src2 = "js/highlightjs-line-numbers.min.js"/*"https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"*/;		
+	
 
 function color(){
 	 
