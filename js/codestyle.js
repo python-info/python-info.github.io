@@ -1,7 +1,7 @@
 
 	$(document).ready(function(){
 	
-	var src1 = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js";	
+	var src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js";	
 	
 	
 	$("nav ul li a").click(function(e){
@@ -9,7 +9,7 @@
 		menuSwitch($(this).attr('href'));
 		$("article").load("content/"+$(this).attr('href')+".html")
 
-		$.getScript(src1, function () {
+		$.getScript(src, function () {
 			$('pre > code').each(function(i, block) {
 				hljs.highlightElement(block);	
 				
