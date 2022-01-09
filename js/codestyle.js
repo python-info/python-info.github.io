@@ -1,16 +1,17 @@
 $(document).ready(function(){
 
-	$(".menu").click(function(e){
+	$("nav ul li a").click(function(e){
 		e.preventDefault();
+		menuSwitch($(this).attr('href'));
 
 		$("article").load("content/"+$(this).attr('href')+".html", function(responseTxt, statusTxt, xhr){
-			if(statusTxt == "success")
-				menuSwitch($(this).attr('href'));
+			if(statusTxt == "success")			
 				format();
 			if(statusTxt == "error")
 				alert("Error: " + xhr.status + ": " + xhr.statusText);
 		});
 	});
+	
 	
 	$("article").load("content/1.html");
 	menuSwitch("1");
@@ -19,9 +20,9 @@ $(document).ready(function(){
 
 function format(){
 	
-	var src1 = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js";	
+	var src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js";	
 	
-	$.getScript(src1, function () {
+	$.getScript(src, function () {
 		$('pre > code').each(function(i, block) {
 			hljs.highlightElement(block);	
 			
