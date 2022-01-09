@@ -1,6 +1,6 @@
 
 	var src1 = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js";	
-	var src2 = "https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js";	
+	/*var src2 = "https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js";	*/
 
 $(document).ready(function(){
 	
@@ -18,11 +18,11 @@ $(document).ready(function(){
 			});
 		});	
 
-		$.getScript(src2, function () {		
+		/*$.getScript(src2, function () {		
 			$('code.hljs').each(function(i, block) {
 				hljs.lineNumbersBlock(block);		
 			});
-		});
+		});*/
 		
 	});
 	
