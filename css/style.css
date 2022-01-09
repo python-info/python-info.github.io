@@ -232,14 +232,6 @@ code li:before{
 	line-height:120%;
 }
 
-/*.hljs-ln-numbers {
-	text-align: center;
-	color: #ccc;
-	border-right: 1px solid #999;
-	vertical-align: top;
-}*/
-
-
 .caly{
     width:300px;
     line-height:30px;
@@ -409,7 +401,7 @@ article ul {
 	code{
 		margin-right: 40px;
 		margin-left: 40px;
-		font-size: 15px;
+		/*font-size: 25px;*/
 	}
 	
 	.tabstr{
@@ -434,7 +426,6 @@ article ul {
 
 	
 }
-
 
 
 
