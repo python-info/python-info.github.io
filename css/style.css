@@ -1,3 +1,5 @@
+
+
 *{
 	margin: 0;
 	padding: 0;
@@ -209,12 +211,33 @@ code{
 	font-size: 16px;
 }
 
-.hljs-ln-numbers {
+code ul{
+	counter-reset: line; 
+	list-style-type: none;
+	}
+	
+code li{
+	counter-increment: line;
+	}
+	
+code li:before{
+	content: counter(line);
+	width: 15px;
+	display: inline-block; 
+	text-align: right;
+	}
+
+.li{
+	padding: 0px;
+	line-height:120%;
+}
+
+/*.hljs-ln-numbers {
 	text-align: center;
 	color: #ccc;
 	border-right: 1px solid #999;
 	vertical-align: top;
-}
+}*/
 
 
 .caly{
@@ -367,7 +390,7 @@ article ul {
 	article ul li {
 		font-size: 10px;
 		padding: 5px;
-		margin-left: 50px;
+		margin-left: 0px;
 	}
 	
 	h4{
@@ -411,5 +434,7 @@ article ul {
 
 	
 }
+
+
 
 
