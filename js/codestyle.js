@@ -1,8 +1,8 @@
 
+	$(document).ready(function(){
+	
 	var src1 = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js";	
-	var src2 = "https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js";	
-
-$(document).ready(function(){
+	
 	
 	$("nav ul li a").click(function(e){
 		e.preventDefault();
@@ -12,22 +12,34 @@ $(document).ready(function(){
 		$.getScript(src1, function () {
 			$('pre > code').each(function(i, block) {
 				hljs.highlightElement(block);	
+				
+				var current = $(this),
+				lineStart = parseInt(current.data('line-start')),
+				lineFocus = parseInt(current.data('line-focus')),
+				items = current.html().split("\n"),
+				total = items.length,
+				result = '<ul ' + (!isNaN(lineStart) ? 'start="' + lineStart + '"' : '') + '>';
+				
+				for (var i = 0; i < total; i++) {
+					
+					if (i === (lineFocus - lineStart)) {
+						result += '<li class="li">';
+					} else {
+						result += '<li class="li">' + ' <span style=\"font-size:30px;\">|</span>';
+					}
+					
+				result += items[i] + '</li>';
+				}
+				result += '</ul>';
+				current.empty().append(result);
+				
 			});
+	
 		});	
-
-		$.getScript(src2, function () {		
-			$('code.hljs').each(function(i, block) {
-				hljs.lineNumbersBlock(block);		
-			});
-		});
 		
 	});
 	
 	$("article").load("content/1.html");
 	menuSwitch("1");
 	
-	
 });
-
-
-
