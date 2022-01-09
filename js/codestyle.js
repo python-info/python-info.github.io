@@ -1,17 +1,11 @@
 $(document).ready(function(){
+
 	
-	for(let i=1;i<11;i++){
-		$("article").load("content/"+i+".html")
-		f();
-		alert("A");
-	}
-
 	$("nav ul li a").click(function(e){
-		e.preventDefault();
-		menuSwitch($(this).attr('href'));
 		$("article").load("content/"+$(this).attr('href')+".html")
-
-		f();			
+		menuSwitch($(this).attr('href'));
+		e.preventDefault();
+		f();
 	});
 	
 	$("article").load("content/1.html");
