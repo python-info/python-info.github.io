@@ -18,36 +18,25 @@ $(document).ready(function(){
 		if($('code.hljs')==null) color();
 		else break;
 		}
-
-		/*$.getScript(src1, function () {
-			$('pre > code').each(function(i, block) {
-				hljs.highlightElement(block);		
-			});
-		});	
-		
-		$.getScript(src2, function () {
-			$('code.hljs').each(function(i, block) {
-				hljs.lineNumbersBlock(block);	
-			});
-		});*/
 		
 	});
 });
 
-var src1 = "js/highlight.min.js"/*"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"*/;
-	var src2 = "js/highlightjs-line-numbers.min.js"/*"https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"*/;		
+var src1 = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js";
+var src2 = "https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js";		
 	
 
 function color(){
 	 
 $.getScript(src1, function () {
-			$('pre > code').each(function(i, block) {
-				hljs.highlightElement(block);	
-				$.getScript(src2, function () {
-					$('code.hljs').each(function(i, block) {
-						hljs.lineNumbersBlock(block);
-					});
-				});
+			$('pre > code').each(function(el) {
+				hljs.highlightElement(el);		
 			});
 		});	
+		
+		$.getScript(src2, function () {
+			$('code.hljs').each(function(el) {
+				hljs.lineNumbersBlock(el);	
+			});
+		});
  }
