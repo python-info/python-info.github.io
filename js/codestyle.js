@@ -5,7 +5,7 @@ $(document).ready(function(){
 		$("article").load("content/"+$(this).attr('href')+".html")
 		menuSwitch($(this).attr('href'));
 		e.preventDefault();
-		f();f();
+		f();f();f();f();
 	});
 	
 	$("article").load("content/1.html");
