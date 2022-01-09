@@ -1,15 +1,28 @@
+$(document).ready(function(){
 
-	$(document).ready(function(){
-	
-	var src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js";	
-	
-	
 	$("nav ul li a").click(function(e){
 		e.preventDefault();
 		menuSwitch($(this).attr('href'));
 		$("article").load("content/"+$(this).attr('href')+".html")
 
-		$.getScript(src, function () {
+		f();
+		alert($("pre code.hljs").html);
+		//if($("pre code.hljs")==null)
+		
+		
+		
+	});
+	
+	$("article").load("content/1.html");
+	menuSwitch("1");
+	
+});
+
+function f(){
+	
+	var src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js";	
+	
+	$.getScript(src, function () {
 			$('pre > code').each(function(i, block) {
 				hljs.highlightElement(block);	
 				
@@ -36,10 +49,4 @@
 			});
 	
 		});	
-		
-	});
-	
-	$("article").load("content/1.html");
-	menuSwitch("1");
-	
-});
+}
