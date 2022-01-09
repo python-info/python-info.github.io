@@ -13,8 +13,15 @@ $(document).ready(function(){
 
 
 		$("article").load("content/"+$(this).attr('href')+".html");
+		
+		color();
+		//nie zawsze kod zosatnie sformatowany poprawnie
+		for(;;){
+		if($('code.hljs')==null) color();
+		else break;
+		}
 
-		$.getScript(src1, function () {
+		/*$.getScript(src1, function () {
 			$('pre > code').each(function(i, block) {
 				hljs.highlightElement(block);		
 			});
@@ -24,7 +31,23 @@ $(document).ready(function(){
 			$('code.hljs').each(function(i, block) {
 				hljs.lineNumbersBlock(block);	
 			});
-		});
+		});*/
 		
 	});
 });
+
+
+
+function color(){
+	 
+$.getScript(src1, function () {
+			$('pre > code').each(function(i, block) {
+				hljs.highlightElement(block);	
+				$.getScript(src2, function () {
+					$('code.hljs').each(function(i, block) {
+						hljs.lineNumbersBlock(block);
+					});
+				});
+			});
+		});	
+ }
