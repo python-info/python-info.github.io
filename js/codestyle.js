@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
-	var src1 = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js";
-	var src2 = "https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js";
+	var src1 = "highlight.min.js"/*"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"*/;
+	var src2 = "highlightjs-line-numbers.min.js"/*"https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"*/;		
 	
 	$("article").load("content/1.html");
 			menuSwitch("1");
@@ -25,8 +25,6 @@ $(document).ready(function(){
 				hljs.lineNumbersBlock(block);	
 			});
 		});
-		
-		/*$("article").load("content/"+$(this).attr('href')+".html");*/
 		
 	});
 });
