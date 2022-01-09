@@ -1,0 +1,28 @@
+<h2>Instrukcja warunkowa (IF)</h2><br>
+     
+	 <p>Do podejmowania decyzji w programowaniu służy instrukcja warunkowa <span class="redtext">if</span>.</p>
+
+	<p>Blok kodu podany po instrukcji <span class="redtext">if</span> zostanie wykonany wtedy, gdy wyrażenie warunkowe będzie prawdziwe.
+	W przeciwnym przypadku blok kodu zostanie zignorowany. Część <span class="redtext">else</span> jest przydatna, jeśli chcemy,
+	żeby nasz program sprawdził wyrażenie warunkowe i wykonał blok kodu jeśli wyrażenie warunkowe jest prawdziwe 
+	lub wykonał inny blok kodu jeśli wyrażenie warunkowe było fałszywe.</p>
+
+	<p>Python pozwala także na sprawdzenie większej liczby warunków w ramach jednej instrukcji <span cclass="redtext">if</span>. Służy do tego instrukcja <span class="redtext">elif</span> (skrót od else if).</p>
+	 
+
+<pre>
+<code class="py">
+  if wyrażenie_warunkowe:
+      blok kodu 1
+  elif:
+      blok kodu 2
+  else:
+      blok kodu 3	  
+ </code>
+</pre>
+<p>Wszystkie instrukcje w bloku kodu muszą być wcięte względem instrukcji <span class="redtext">if</span>.
+W ten sposób Python rozpoznaje, które instrukcje ma wykonać po sprawdzeniu prawdziwości wyrażenia.
+Tak samo po instrukcjach <span class="redtext">elif</span> i <span class="redtext">else</span> musimy wstawić dwukropek a instrukcje muszą być wcięte.</p>
+
+<p>Głębokość wcięcia nie ma znaczenia (dobry zwyczaj programowania w Pythonie mówi, żeby używać czterech spacji)
+ale musi być ono w całym programie zawsze tej samej głębokości.</p>

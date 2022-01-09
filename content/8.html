@@ -1,0 +1,18 @@
+ <h2>Metody klasy List</h2><br>
+		
+ <p>Funkcja <span class="redtext">input()</span> pobiera dane wprowadzone przez użytkownika (tak jak <span class="redtext">raw_input()</span>),
+ ale próbuje zinterpretować je jako kod Pythona. Podane na wejściu liczby oddzielone przecinkami 
+ zostają więc spakowane jako tupla (krotka). Jest to uporządkowana sekwencja poindeksowanych danych,
+ przypominająca tablicę, której wartości nie można zmieniać. Gdybyśmy chcieli wpisać do tupli wartości 
+ od razu w kodzie, napisalibyśmy: <span class="redtext">tupla = (4, 3, 5)</span>. Listy to również uporządkowane sekwencje indeksowanych 
+ danych, zazwyczaj tego samego typu, które jednak możemy zmieniać.</p>
+ 
+ <p>Dostęp do elementów tupli lub listy uzyskujemy podając nazwę i indeks, np. <span class="redtext">lista[0]</span>. Elementy indeksowane są od 0 (zera!). 
+ Funkcja <span class="redtext">len()</span> zwraca ilość elementów w tupli/liście. Funkcja <span class="redtext">enumerate()</span> zwraca obiekt zawierający indeksy i elementy sekwencji (np. tupli lub listy) podanej jako atrybut. Funkcja <span class="redtext">reversed()</span> zwraca odwróconą sekwencję.</p>
+ 
+ <p>Lista ma wiele użytecznych metod: <span class="redtext">.append(x)</span> – dodaje x do listy; <span class="redtext">remove(x)</span> – usuwa pierwszy x z     listy; <span class="redtext">insert(i, x)</span> – wstawia x przed indeksem i; 
+ <span class="redtext">count(x)</span> – zwraca ilość wystąpień x; <span class="redtext">index(x)</span> – zwraca indeks pierwszego wystąpienia x; <span class="redtext">pop()</span> – usuwa i zwraca ostatni element listy.
+ Funkcja <span class="redtext">reversed(lista)</span> zwraca kopię listy w odwróconym porządku, natomiast <span class="redtext">sorted(lista)</span> zwraca kopię listy posortowanej rosnąco.
+ Jeżeli chcemy trwale odwrócić lub posortować elementy listy stosujemy metody: <span class="redtext">reverse()</span> i <span class="redtext">sort()</span>. Z każdej sekwencji (napisu, tupli czy listy) 
+ możemy wydobywać fragmenty dzięki notacji <span class="redtext">slice (wycinek)</span>. W najprostszym przypadku polega ona na podaniu początkowego i końcowego (wyłącznie) indeksu elementów,
+ które chcemy wydobyć, np. <span class="redtext">lista[1:4]</span>.</p>

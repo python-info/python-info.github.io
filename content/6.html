@@ -1,0 +1,66 @@
+<h2>Pętle</h2><br>
+		
+	  <h4>FOR</h4>
+	  <p>Pętla for "przebiega" przez podany ciąg liczb.
+	  Pętlę for możemy zrealizować z użyciem funkcji <span class="redtext">range</span> lub <span class="redtext">xrange</span>. Różnica między nimi polega na tym, 
+	  że range zwraca nową tablicę liczb zawartych w określonym przedziale, natomiast xrange zwraca pojedyńczą liczbę, co czyni ją w pętlach bardziej wydajną. Python 3 używa funkcji range, która działa jak xrange. Funkcja xrange zwracając liczby zaczyna od 0.</p>
+	  
+<pre>
+<code class="py">
+  # Wypisze liczby 0 1 2 3 4
+  for x in xrange(5):
+      print x,	  
+ </code>
+</pre>	  
+<pre>
+<code class="py">
+  # Wypisze 3 4 5
+  for x in xrange(3,6):
+      print x,	  
+ </code>
+</pre>
+	 <h4>WHILE</h4>  
+<p>Pętla while służy do konstrukcji bloku instrukcji, które będą wykonywane warunkowo.
+ W programie najpierw będzie sprawdzane czy warunek jest spełniony – jeśli tak, to wykonane będą wszystkie
+ instrukcje zawarte w bloku. Następnie ponownie sprawdzany jest warunek, jeśli nadal jest spełniony to 
+ ponownie wykonuje wszystkie polecenia. Pętla jest wykonywana tak długo, jak długo warunek jest prawdziwy.</p>
+<pre>
+<code class="py">
+  while wyrażenie_warunkowe:
+      blok kodu	  
+ </code>
+</pre>
+<pre>  
+<code class="py">
+  # Wypisze 0 1 2 3 4
+
+  licznik = 0
+  while licznik &lt 5:
+      print licznik,
+      licznik += 1  # Ma to taki sam efekt jak licznik = licznik + 1	  
+ </code>
+</pre>
+ <p>Wyrażenie <span class="redtext">break</span> powoduje natychmiastowe zakończenie wykonywania pętli.</p>
+ <p>Wyrażenie <span class="redtext">continue</span> powoduje ominięcie następujących po nim wyrażeń w bloku, a następnie rozpoczyna ponowne wykonanie pętli.</p>
+<pre>
+<code class="py">
+  # Wypisze 0 1 2 3 4
+
+  licznik = 0  
+  while True:
+      print licznik,
+      licznik += 1
+      if licznik >= 5:
+          break		  
+ </code>
+</pre>
+<pre>
+<code class="py">
+  # Wypisze tylko liczby nieparzyste - 1 3 5 7 9
+  for x in xrange(10):
+      # Sprawdz, czy x jest parzyste
+      if x % 2 == 0:
+          continue
+      print x,	  
+ </code>
+</pre>
