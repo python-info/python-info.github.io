@@ -5,12 +5,7 @@ $(document).ready(function(){
 		menuSwitch($(this).attr('href'));
 		$("article").load("content/"+$(this).attr('href')+".html")
 
-		f();
-		alert($("pre code.hljs").html);
-		//if($("pre code.hljs")==null)
-		
-		
-		
+		f();			
 	});
 	
 	$("article").load("content/1.html");
