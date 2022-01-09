@@ -1,4 +1,9 @@
 $(document).ready(function(){
+	
+	for(let i=1;i<11;i++){
+		$("article").load("content/"+i+".html")
+		f();
+	}
 
 	$("nav ul li a").click(function(e){
 		e.preventDefault();
