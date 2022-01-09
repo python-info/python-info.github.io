@@ -387,10 +387,10 @@ article ul {
 		margin-right: 50px;
 	}
 	
-	article ul li {
+	article ul.op li {
 		font-size: 10px;
 		padding: 5px;
-		margin-left: 0px;
+		margin-left: 50px;
 	}
 	
 	h4{
@@ -434,6 +434,9 @@ article ul {
 
 	
 }
+
+
+
 
 
 
