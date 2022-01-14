@@ -24,7 +24,7 @@ $(document).ready(function(){
 						$("#img-out").html("");
 					    $("code").html($("#textarea").val());
 						$("#format").html($("#code").html());
-						format();
+		
 						var src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js";	
 						
 							$.getScript(src, function () {				
