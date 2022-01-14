@@ -18,7 +18,7 @@ function format(){
 				if (i === (lineFocus - lineStart)) {
 					result += '<li class="li">';
 				} else {
-					result += '<li class="li">' + ' <span style=\"font-size:30px;\"> |</span>';
+					result += '<li class="li">' + ' <span style=\"font-size:30px;\">&nbsp|</span>';
 				}
 				
 			result += items[i] + '</li>';
