@@ -339,7 +339,7 @@ button:active {
 	}
 	
 	nav ul li a{
-		font-size: 17px;	
+		font-size: 14px;	
 	}
 	
 	nav ul li a:hover,
@@ -437,12 +437,11 @@ button:active {
 	
 	canvas{
 		font-size: 10px;
-		margin-right: 10px;
 		margin-left: 40px;
 	}
 	
 	textarea{
-		font-size: 5px;
+		font-size: 10px;
 		width: 300%;
 		margin-right: 40px;
 		margin-left: 40px;
@@ -475,6 +474,8 @@ button:active {
 	}
 	
 }
+
+
 
 
 
