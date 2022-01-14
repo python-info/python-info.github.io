@@ -12,7 +12,7 @@ $(document).ready(function(){
 					format();
 				}
 				else{
-					$("#btnSave").click(function() {
+					$("#btnGenerate").click(function() {
 					$("#img-out").html("");
 						html2canvas($("#format")[0]).then((canvas) => {
 						$("#img-out").append(canvas);
