@@ -94,6 +94,18 @@ footer{
 	margin: auto;
 }
 
+textarea {
+  width: 400%;
+  height: 200px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
 #slider{
 	width: 33.3%;
 	margin-top: auto;
@@ -282,8 +294,36 @@ article ul {
 	padding: 15px;
 }
 
+button {
+    display: inline-block;
+    border: none;
+	border-radius: 30px;
+	font-weight: 800;
+    padding: 1rem 2rem;
+    margin: 0;
+    background: grey;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    transition: background 500ms ease-in-out;
+}
+
+button:hover,
+button:focus {
+    background: #383838;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
 
 @media (max-width: 980px){
+	
+	button{
+		margin-left: 40px;
+	}
+	
 	#top{
 		font-size: 50px;
 	}
@@ -395,9 +435,27 @@ article ul {
 		margin-left: 40px;
 	}
 	
+	canvas{
+		font-size: 10px;
+		margin-right: 10px;
+		margin-left: 40px;
+	}
+	
+	textarea{
+		font-size: 5px;
+		width: 300%;
+		margin-right: 40px;
+		margin-left: 40px;
+	}
+	
+	#invisible{
+		height: 0px;
+	}
+	
 	.tabstr{
 		margin-left: 50px;
 		margin-right: 50px;
+		font-size: 15px;
 	}
 	
 	.tabstr td{
@@ -415,7 +473,10 @@ article ul {
 	.box{
 		display: none;
 	}
+	
 }
+
+
 
 
 
