@@ -232,7 +232,7 @@ code li{
 	
 code li:before{
 	content: counter(line);
-	width: 15px;
+	width: 25px;
 	display: inline-block; 
 	text-align: right;
 }
