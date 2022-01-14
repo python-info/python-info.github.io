@@ -24,6 +24,7 @@ $(document).ready(function(){
 						$("#img-out").html("");
 					    $("code").html($("#textarea").val());
 						$("#format").html($("#code").html());
+						$("code")[0].innerHTML = "";	
 		
 						var src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js";	
 						
@@ -51,8 +52,7 @@ $(document).ready(function(){
 									result += '</ul>';
 									current.empty().append(result);
 								});
-							});
-						$("code")[0].innerHTML = "";								
+							});							
 					});	
 				}				
 			if(statusTxt == "error")
