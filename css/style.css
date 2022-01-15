@@ -453,7 +453,7 @@ button:active {
 	}
 	
 	#wkp{
-		font-size: 16px;
+		font-size: 16px !important;
 	}
 	
 	.tabstr{
