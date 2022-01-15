@@ -408,7 +408,7 @@ button:active {
 	}
 	
 	p{
-		font-size: 10px !important;
+		font-size: 10px;
 		padding: 5px;
 		margin-left: 50px;
 		margin-right: 50px;
@@ -422,11 +422,11 @@ button:active {
 	
 	h4{
 		margin-left: 50px;
-		font-size: 10px !important;
+		font-size: 10px;
 	}
 	
 	h2{
-		font-size: 15px !important;
+		font-size: 15px;
 	}
 	
 	.example{
@@ -434,7 +434,7 @@ button:active {
 	}
 	
 	code{
-		font-size: 10px !important;
+		font-size: 10px;
 		margin-right: 40px;
 		margin-left: 40px;
 	}
@@ -453,7 +453,7 @@ button:active {
 	}
 	
 	#wkp{
-		font-size: 16px !important;
+		font-size: 16px;
 	}
 	
 	.tabstr{
