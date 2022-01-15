@@ -95,15 +95,15 @@ footer{
 }
 
 textarea {
-  width: 400%;
-  height: 200px;
+  width: 80%;
+  height: 300px;
   padding: 12px 20px;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
   background-color: #f8f8f8;
   font-size: 16px;
-  resize: none;
+ /* resize: none;*/
 }
 
 #slider{
@@ -317,6 +317,10 @@ button:active {
     transform: scale(0.97);
 }
 
+#invisible{
+		height: 0px;
+	}
+
 
 @media (max-width: 980px){
 	
@@ -442,7 +446,8 @@ button:active {
 	
 	textarea{
 		font-size: 10px;
-		width: 300%;
+		width: 80%;
+		height: 150px;
 		margin-right: 40px;
 		margin-left: 40px;
 	}
@@ -470,10 +475,6 @@ button:active {
 	}
 	
 }
-
-
-
-
 
 
 
