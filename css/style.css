@@ -95,7 +95,7 @@ footer{
 }
 
 textarea {
-  width: 400%;
+  width: 800px;
   height: 300px;
   padding: 12px 20px;
   box-sizing: border-box;
@@ -446,7 +446,7 @@ button:active {
 	
 	textarea{
 		font-size: 10px;
-		width: 300%;
+		width: 600px;
 		height: 150px;
 		margin-right: 40px;
 		margin-left: 40px;
@@ -475,7 +475,4 @@ button:active {
 	}
 	
 }
-
-
-
 
